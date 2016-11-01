@@ -31,17 +31,17 @@ namespace BattleNET
 
         public static byte[] String2Bytes(string s)
         {
-            return Encoding.GetEncoding(1252).GetBytes(s);
+            return Encoding.GetEncoding(1251).GetBytes(s);
         }
 
         public static string Bytes2String(byte[] bytes)
         {
-            return Encoding.GetEncoding(1252).GetString(bytes);
+            return Encoding.GetEncoding(1251).GetString(bytes);
         }
 
         public static string Bytes2String(byte[] bytes, int index, int count)
         {
-            return Encoding.UTF8.GetString(bytes, index, count);
+            return Encoding.GetEncoding(1251).GetString(bytes, index, count);
         }
 
         public static string StringValueOf(Enum value)
