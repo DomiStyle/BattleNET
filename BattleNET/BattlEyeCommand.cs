@@ -141,6 +141,6 @@ namespace BattleNET
         /// admins - Gets connected RCON clients.
         /// </summary>
         [Description("admins")]
-        admins,
+        Admins,
     }
 }
